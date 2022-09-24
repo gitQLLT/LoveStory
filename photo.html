@@ -54,6 +54,11 @@
 					height: '1706'
 				},
 				{
+					alt: '第一次滑轮加拍照',
+					width: '1280',
+					height: '1706'
+				},
+				{
 					alt: '小龙虾终结者',
 					width: '1280',
 					height: '1706'
@@ -736,11 +741,13 @@
 			]
 			let li = ''
 			for(let i = 0,len=arr.length; i < len; i++){
-				li += `<li>
-					<a href="images/thumbs/img (${i+1}).jpg">
-					  <img src="images/thumbs/img (${i+1}).jpg" alt="${arr[i].alt}" width="${arr[i].width}" height="${arr[i].height}" />
-					</a>
-				  </li>`
+				if(i!==4){
+					li += `<li>
+						<a href="images/thumbs/img (${i+1}).jpg">
+						  <img src="images/thumbs/img (${i+1}).jpg" alt="${arr[i].alt}" width="${arr[i].width}" height="${arr[i].height}" />
+						</a>
+					  </li>`
+				}
 			}
 			$('.photopile').append(li)
 		})
