@@ -742,13 +742,13 @@
 				}
 			]
 			let li = ''
-			arr.forEach((item,index)=>{
+			for(let i = 0,len=arr.length; i < len; i++){
 				li += `<li>
-					<a href="images/fullsize/img (${index+1}).jpg">
-					  <img src="images/thumbs/img (${index+1}).jpg" alt="${item.alt}" width="${item.width}" height="${item.height}" />
+					<a href="images/fullsize/img (${i+1}).jpg">
+					  <img src="images/thumbs/img (${i+1}).jpg" alt="${arr[i].alt}" width="${arr[i].width}" height="${arr[i].height}" />
 					</a>
 				  </li>`
-			})
+			}
 			$('.photopile').append(li)
 		})
 	</script>
