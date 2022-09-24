@@ -59,7 +59,6 @@
 		let domContent = document.documentElement || document.body
 		EventUtil.bindEvent(domContent, 'swipeleft', ()=>window.location = './photo.html');
 		let images = new Array()  
-		let images1 = new Array()  
 		let arr = [
 			{
 				alt: '第一次滑轮加拍照',
@@ -784,9 +783,7 @@
 		]
 		for (let i = 0,len=arr.length; i < len; i++) {
 			images[i] = new Image()  
-			images1[i] = new Image()  
 			images[i].src = `images/thumbs/img (${i+1}).jpg`
-			images1[i].src = `images/fullsize/img (${i+1}).jpg`  
 		}  
     </script>
 
