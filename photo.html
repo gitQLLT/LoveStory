@@ -7,8 +7,6 @@
 	<title>次卧-小洁菲</title>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" /><!--CSS RESET-->
 	<link href="css/photopile.css" rel="stylesheet">
-	 <!--引入事件-->
-	<script src="./js/EventUtil.js"></script>
 </head>
 <body>
 	<div class="bluestep-container">
@@ -760,9 +758,5 @@
 			PhotoPile().scatter();
 		})
 	</script>
-	<script>
-		let domContent = document.documentElement || document.body
-		EventUtil.bindEvent(domContent, 'swiperight', ()=>window.location = './index.html');
-    </script>
 </body>
 </html>
