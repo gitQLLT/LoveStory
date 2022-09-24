@@ -13,6 +13,8 @@
         <script type="text/javascript" src="./js/jscex-async-powerpack.min.js"></script>
         <script type="text/javascript" src="./js/functions.js" charset="utf-8"></script>
         <script type="text/javascript" src="./js/love.js" charset="utf-8"></script>
+		 <!--引入事件-->
+		<script src="./js/EventUtil.js"></script>
 
     </head>
     <body>
@@ -54,6 +56,8 @@
         </div>
     
     <script>
+		let domContent = document.documentElement || document.body
+		EventUtil.bindEvent(domContent, 'swipeleft', ()=>window.location = './photo.html');
     </script>
 
     <script>
